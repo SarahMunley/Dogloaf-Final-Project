@@ -1,0 +1,284 @@
+/*Main Navigation Overwrite */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.logo {
+  padding: 25px;
+  float: right;
+}
+.title-bar {
+  background: white;
+}
+a {
+  color: black;
+}
+
+.top-bar {
+  background: white;
+}
+
+
+ul {
+  background: white;
+}
+p {
+  font-size: 14px;
+}
+/*Flip Cards*/
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Card design - front */
+.button.large {
+  margin: 0;
+  padding-top: 100px;
+}
+
+.button.large a {
+  font-family: 'Vast Shadow', cursive;
+  color: white;
+  font-size: 2em;
+  margin-top: auto;
+}
+
+/* Card design - back */
+.panel {
+  padding-top: 25px;
+  align-items: center;
+}
+
+.panel a {
+  margin-left: auto;
+}
+.panel p {
+  text-align: center;
+}
+.panel small {
+  width: 80%;
+  padding-top: 15px;
+}
+.panel a:hover {
+  text-decoration: underline;
+}
+.panel small {
+  margin-top: -0.5rem;
+  font-style: italic;
+}
+
+/* Buttons Card Flipper
+ * Source: https://cssdeck.com/labs/rxcleo5w
+ */
+.flip-cards {
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+}
+
+.flip-cards li {
+  list-style-type: none;
+  float: left;
+  width: 33.3%;
+  height: 250px;
+  position: relative;
+  padding: 0;
+}
+
+.flip-cards li:hover {
+  cursor: pointer;
+}
+
+.flip-cards li:hover .card-front {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform: perspective(1000) rotateY(180deg);
+  -moz-transform: perspective(1000) rotateY(180deg);
+  -ms-transform: perspective(1000) rotateY(180deg);
+  -o-transform: perspective(1000) rotateY(180deg);
+  transform: perspective(1000) rotateY(180deg);
+}
+
+.flip-cards li:hover .card-back {
+  z-index: 950;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: perspective(1000) rotateY(0deg);
+  -moz-transform: perspective(1000) rotateY(0deg);
+  -ms-transform: perspective(1000) rotateY(0deg);
+  -o-transform: perspective(1000) rotateY(0deg);
+  transform: perspective(1000) rotateY(0deg);
+}
+
+.flip-cards .card-front,
+.flip-cards .card-back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  transition: transform 0.6s;
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.flip-cards .card-front {
+  -webkit-transform: perspective(1000) rotateY(0);
+  -moz-transform: perspective(1000) rotateY(0);
+  -ms-transform: perspective(1000) rotateY(0);
+  -o-transform: perspective(1000) rotateY(0);
+  transform: perspective(1000) rotateY(0);
+  z-index: 900;
+}
+
+.flip-cards .card-back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  z-index: 800;
+}
+
+/* Button Card Colors */
+.flip-cards .panel {
+  border: none;
+  text-align: center;
+}
+
+.flip-cards .panel i,
+.flip-cards .panel p,
+.flip-cards .panel a,
+.flip-cards .panel small {
+  color: white;
+}
+.flip-cards .panel a {
+  padding: auto;
+}
+/* First button background */
+.flip-cards li:first-child > .button {
+  background: url("http://i.imgur.com/kd3V9b5.png");
+}
+.flip-cards li:first-child > .panel {
+  background-color: rgba(40, 57, 77, 1);
+}
+
+/* Second button background */
+.flip-cards li:nth-child(2) > .button {
+  background-color: rgba(109, 193, 202, 0.8);
+}
+.flip-cards li:nth-child(2) > .panel {
+  background-color: rgba(109, 193, 202, 1);
+}
+
+/* Third button background */
+.flip-cards li:nth-child(3) > .button {
+  background-color: rgba(211, 81, 45, 0.8);
+}
+.flip-cards li:nth-child(3) > .panel {
+  background-color: rgba(211, 81, 45, 1);
+}
+
+/* Fourth button background */
+.flip-cards li:nth-child(4) > .button {
+  background-color: rgba(235, 167, 36, 0.8);
+}
+.flip-cards li:nth-child(4) > .panel {
+  background-color: rgba(235, 167, 36, 1);
+}
+
+/* Fifth button background */
+.flip-cards li:nth-child(5) > .button {
+  background-color: rgba(75, 135, 150, 0.8);
+}
+.flip-cards li:nth-child(5) > .panel {
+  background-color: rgba(75, 135, 150, 1);
+}
+
+/* Sixth (last) button background */
+.flip-cards li:last-child > .button {
+  background-color: rgba(100, 66, 87, 0.8);
+}
+.flip-cards li:last-child > .panel {
+  background-color: rgba(100, 66, 87, 1);
+  color: white;
+}
+/*Button link on backside of card*/
+.idcard {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #026849;
+  font-size: 20px;
+}
+.philosopher {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+footer {
+  width: 100%;
+  height: 75px;
+  background-color: black;
+  color: white;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+/*Media Queries - Flip Cards*/
+@media only screen and ( max-width: 760px ) {
+	.flip-cards li {
+		width: 50%;
+		/*height: 160px;*/
+	}
+}
+@media only screen and ( max-width: 680px ) {
+	.flip-cards li {
+		width: 100%;
+		font-size: 1.35rem;
+		height: 120px;
+	}
+	.flip-cards .panel p {
+		font-size: 14px;
+    padding: 10px;
+	}
+	.flip-cards .panel small {
+		margin: 25px;
+	}
+	.button.large {
+		padding: 2rem;
+	}
+	.button.large a {
+		font-size: 1.35rem;
+	}
+  .flip-cards a {
+    padding: 5px;
+    font-size: .75rem;
+  }
+  .philosopher {
+    width: 75%;
+  }
+}
+/*Media Queries Navigation */
+@media (max-width:40em) {
+  .logo {
+    display: none;
+  }
+}
+.small-logo {
+  padding-left: 25px;
+}
+.menu-icon {
+  background: url("http://i.imgur.com/dKLS6AM.png")
+  float: left;
+}
