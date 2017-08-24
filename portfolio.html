@@ -5,6 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vast+Shadow" rel="stylesheet">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,18 +18,18 @@
   		<button class="menu-icon" type="button" data-toggle></button>
   		<div class="title-bar-title"><img src="http://i.imgur.com/OPf32JC.png" class="small-logo"></div>
   </div>
-
+<!--Navigation-->
   <div class="top-bar" id="main-nav">
   		<div class="top-bar-right">
   				<img src="http://i.imgur.com/OPf32JC.png" class="logo">
   		</div>
   		<div class="top-bar-left">
   				<ul class=" medium-horizontal vertical dropdown menu" data-responsive-menu="dropdown medium-dropdown">
-  						<li><a href="#">About</a></li>
-  						<li><a href="#">Portfolio</a></li>
-  						<li><a href="#">Resume</a></li>
-              <li><a href="#">Writing</a></li>
-              <li><a href="#">Contact</a></li>
+  						<li><a href="about.html">About</a></li>
+  						<li><a href="portfolio.html">Portfolio</a></li>
+  						<li><a href="resume.html">Resume</a></li>
+              <li><a href="writing.html">Writing</a></li>
+
   				</ul>
   		</div>
   </div>
@@ -38,8 +40,78 @@
         <li class="accordion-item is-active" data-accordion-item>
           <a href="#" class="accordion-title">Marketing</a>
           <div class="accordion-content" data-tab-content >
-            <p>Panel 1. Lorem ipsum dolor</p>
-            <a href="#">Nowhere to Go</a>
+          <!--Portfolio Item 1-->
+          <div class="card card-tabs">
+          <div class="card-divider">
+            <ul class="tabs menu align-right" data-active-collapse="true" data-tabs id="collapsing-tabs">
+      <!-- note: these need to be in reverse order because of the align-right setting in .menu -->
+      <li class="tabs-title"><a href="#panel3c">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Description
+      </a></li>
+      <li class="tabs-title"><a href="#panel2c">
+      <i class="fa fa-search-plus" aria-hidden="true"></i>
+        Detail
+      </a></li>
+      <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true"><i class="fa fa-eye" aria-hidden="true"></i>
+       Gallery</a></li>
+     </ul>
+   </div>
+   <div class="tabs-content" data-tabs-content="collapsing-tabs">
+
+    <div class="tabs-panel is-active" id="panel1c">
+<!--Image Gallery 1 Start-->
+<div class="news-image-gallery-container">
+  <div class="row">
+    <div class="small-12 medium-12 large-8 columns">
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+        <ul class="orbit-container">
+          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+          <li class="is-active orbit-slide">
+            <img class="orbit-image" src="http://i.imgur.com/Bz3LgDn.png" alt="Spirit">
+            <figcaption class="orbit-caption">Spirit Airlines Pitch</figcaption>
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="http://i.imgur.com/oXn9HpS.png" alt="comScore">
+            <figcaption class="orbit-caption">Use data vendors to support our capabilities</figcaption>
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="http://i.imgur.com/OdJ8o6K.png" alt="Spirit">
+            <figcaption class="orbit-caption">Challenge: Keep proposal to 3 pages while including enough info for 360 approach</figcaption>
+          </li>
+        </ul>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+        </nav>
+      </div>
+    </div>
+      <div class="clearfix"></div>
+      <h4 class="news-image-gallery-title">Client Solutions: Spirit Airlines</h4>
+      <p>
+        To support a multi-channel approach to Spirit, multiple business units submitted their proposals and I was challenged with distilling it all to three pages that supported the objectives of Spirit's request. I used comScore to gather our user data to show how our users align with their customers and arranges the campaign suggestions in a fun and engaging way which alligns with the attitude of Spirit.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--Image Gallery 1 End-->
+    <div class="tabs-panel" id="panel2c">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and has a cat on the bottom.</p>
+      </div>
+      <img src="http://lorempixel.com/485/248/cats/5/">
+    </div>
+    <div class="tabs-panel" id="panel3c">
+      <div class="card-section">
+        <h4>Client Solution Design</h4>
+        <p>Creating presentations for national adveritsers that highlight the capabilities of the company tailored to the specific goals of the client.</p>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </li>
         <li class="accordion-item" data-accordion-item>

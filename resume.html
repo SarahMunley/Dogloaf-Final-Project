@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!--Navigation-->
   <body>
     <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
@@ -21,39 +23,96 @@
   		</div>
   		<div class="top-bar-left">
   				<ul class="medium-horizontal vertical dropdown menu" data-responsive-menu="dropdown medium-dropdown">
-  						<li><a href="#">About</a></li>
-  						<li><a href="#">Portfolio</a></li>
-  						<li><a href="#">Resume</a></li>
-              <li><a href="#">Writing</a></li>
-              <li><a href="#">Contact</a></li>
+  						<li><a href="about.html">About</a></li>
+  						<li><a href="portfolio.html">Portfolio</a></li>
+  						<li><a href="resume.html">Resume</a></li>
+              <li><a href="writing.html">Writing</a></li>
   				</ul>
   		</div>
   </div>
+  <!--Slider-->
+  <div class="fullscreen-image-slider">
+    <div class="orbit" role="region" aria-label="FullScreen Pictures" data-orbit>
+      <ul class="orbit-container">
+        <button class="orbit-previous">
+          <span class="show-for-sr">Previous Slide</span>
+          <span class="nav fa fa-chevron-left fa-3x"></span>
+        </button>
+        <button class="orbit-next">
+          <span class="show-for-sr">Next Slide</span>
+          <span class="nav fa fa-chevron-right fa-3x"></span>
+        </button>
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="http://i.imgur.com/rzplA7p.png" alt="Space">
+          <figcaption class="orbit-caption">
+            <h1>Who am I?</h1>
+            <p>Creative and resourceful marketing professional with experience in travel, hospitality, events and media publishing industries.</p>
+          </figcaption>
+        </li>
+        <li class="orbit-slide">
+          <img class="orbit-image" src="https://static.pexels.com/photos/176851/pexels-photo-176851.jpeg" alt="Space">
+          <figcaption class="orbit-caption">
+            <h1>What can I do?</h1>
+            <p>Effectively communicate marketing objectives and enable sales groups to achieve results.</p>
+          </figcaption>
+        </li>
+        <li class="orbit-slide">
+          <img class="orbit-image" src="https://static.pexels.com/photos/65777/pexels-photo-65777.jpeg" alt="Space">
+          <figcaption class="orbit-caption">
+            <h1>What do I bring to the party?</h1>
+            <p>Outstanding communication, effective design, attention to details...</p></br>
+            <p>...and probably brownies.</p>
+          </figcaption>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
 <!--Resume Content-->
 <div class="row">
   <div class="columns">
     <ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs">
-      <li class="accordion-item is-active" data-accordion-item>
-        <a href="#" class="accordion-title">Summary</a>
-        <div class="accordion-content" data-tab-content >
-          <p>Panel 1. Lorem ipsum dolor</p>
-          <a href="#">Nowhere to Go</a>
-        </div>
-      </li>
+
       <li class="accordion-item" data-accordion-item>
         <a href="#" class="accordion-title">Experience</a>
         <div class="accordion-content" data-tab-content>
-          <p>I do nothing!</p>
+          <p class="resume-sub"><strong>Senior Marketing Manager</strong></p>
+          <p class="resume-sub"><em>tronc (formerly Tribune Publishing)</em></p>
+          <article class="resume-par"><p>On a typical day, I am developing a sales deck for a national advertiser, managing and devleoping our sales enablement software environment, writing B2B content for a blog or working on a new website for a business unit with a new marketing plan.</p></article>
+          <p class="resume-sub"><strong>Marketing Director</strong></p>
+          <p class="resume-sub"><em>Premier Rails</em></p>
+          <article class="resume-par"><p>During my 5 years working for Premier Rails, I was responsible for over $1 Million worth of marketing per year to promote and sell tickets to scenic railroad events including live concerts, sightseeing and large-scale holiday productions.
+          The Polar Express Train Ride, a brand property from Warner Brothers Entertainment, drew over 400,000 people over a six week period each year in locations across the US and UK. </p></article>
         </div>
       </li>
       <li class="accordion-item" data-accordion-item>
-        <a href="#" class="accordion-title">Skills</a>
+        <a href="#" class="accordion-title">Core Skills</a>
         <div class="accordion-content" data-tab-content>
-          <p>Pick a date!</p>
+          <h4 class="experience">Design</h4>
+          <ul>
+            <li>Communication design</li>
+            <li>Digital and print advertising</li>
+            <li>Client proposals</li>
+          </ul>
+          <h4 class="experience">Writing</h4>
+          <ul>
+            <li>B2B Communication</li>
+            <li>Advertising Copy</li>
+            <li>Press Releases</li>
+          </ul>
+          <h4 class="experience">Sales Enablement</h4>
+          <ul>
+            <li>SAVO software</li>
+            <li>Product Marketing Materials</li>
+            <li>Training Material Design and Deployment</li>
+          </ul>
       <li class="accordion-item" data-accordion-item>
         <a href="#" class="accordion-title">Education</a>
         <div class="accordion-content" data-tab-content>
-          <p>Read some stuff</p>
+          <h4>Robert Morris University</h4>
+          <p><em>Bachelor of Applied Science, 2004</em></p>
         </div>
       </li>
     </ul>

@@ -2019,7 +2019,7 @@ td {
 p {
   margin-bottom: 1rem;
   font-size: inherit;
-  line-height: 1.6;
+  line-height: 1.5;
   text-rendering: optimizeLegibility; }
 
 em,
@@ -3116,7 +3116,7 @@ select {
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;
-  background: #e6e6e6; }
+  background: white; }
   .card-divider > :last-child {
     margin-bottom: 0; }
 
@@ -4749,11 +4749,11 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     background: transparent; }
 
 .tabs.primary {
-  background: #1779ba; }
+  background: white; }
   .tabs.primary > li > a {
     color: #fefefe; }
     .tabs.primary > li > a:hover, .tabs.primary > li > a:focus {
-      background: #1673b1; }
+      background: white; }
 
 .tabs-title {
   float: left; }
