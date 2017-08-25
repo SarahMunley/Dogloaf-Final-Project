@@ -2847,7 +2847,7 @@ select {
 
 .accordion-content {
   display: none;
-  padding: 1rem;
+  padding: 15px;;
   border: 1px solid #e6e6e6;
   border-bottom: 0;
   background-color: #fefefe;
@@ -4765,10 +4765,10 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     color: black; }
     .tabs-title > a:hover {
       background: #fefefe;
-      color: #ff552e; }
+      color: #A76AA7; }
     .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
       background: #e6e6e6;
-      color: #ff552e; }
+      color: #A76AA7; }
 
 .tabs-content {
 

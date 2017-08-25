@@ -10,6 +10,10 @@ body {
   padding: 25px;
   float: right;
 }
+
+#home {
+  text-align: center;
+}
 .title-bar {
   background: white;
 }
@@ -19,6 +23,7 @@ a {
 }
 .menu a:hover {
   text-decoration: none;
+  color: #A76AA7;
 }
 
 .top-bar {
@@ -94,6 +99,7 @@ a:hover {
   width: 100%;
   height: 100%;
   padding-left: 1rem;
+  margin: 3px;
 }
 
 .flip-cards li {
@@ -173,8 +179,11 @@ a:hover {
 
 /* Button Card Colors */
 .flip-cards .panel {
-  border: none;
+  border: 3px solid white;
   text-align: center;
+}
+.card-front {
+  border: 3px solid white;
 }
 
 .flip-cards .panel i,
@@ -188,7 +197,7 @@ a:hover {
 }
 /* First button background */
 .flip-cards li:first-child > .button {
-  background: url("http://i.imgur.com/kd3V9b5.png");
+  background: url("http://i.imgur.com/Jg6QgOJ.png");
 }
 .flip-cards li:first-child > .panel {
   background-color: rgba(40, 57, 77, 1);
@@ -196,7 +205,7 @@ a:hover {
 
 /* Second button background */
 .flip-cards li:nth-child(2) > .button {
-  background-color: rgba(109, 193, 202, 0.8);
+  background: url("http://i.imgur.com/dSiDn6I.png");
 }
 .flip-cards li:nth-child(2) > .panel {
   background-color: rgba(109, 193, 202, 1);
@@ -204,7 +213,7 @@ a:hover {
 
 /* Third button background */
 .flip-cards li:nth-child(3) > .button {
-  background-color: rgba(211, 81, 45, 0.8);
+  background: url("http://i.imgur.com/fr6ow6V.png");
 }
 .flip-cards li:nth-child(3) > .panel {
   background-color: rgba(211, 81, 45, 1);
@@ -212,7 +221,7 @@ a:hover {
 
 /* Fourth button background */
 .flip-cards li:nth-child(4) > .button {
-  background-color: rgba(235, 167, 36, 0.8);
+  background: url("http://i.imgur.com/ueWQ1KP.png");
 }
 .flip-cards li:nth-child(4) > .panel {
   background-color: rgba(235, 167, 36, 1);
@@ -220,7 +229,7 @@ a:hover {
 
 /* Fifth button background */
 .flip-cards li:nth-child(5) > .button {
-  background-color: rgba(75, 135, 150, 0.8);
+  background: url("http://i.imgur.com/9SVhlUV.png");
 }
 .flip-cards li:nth-child(5) > .panel {
   background-color: rgba(75, 135, 150, 1);
@@ -228,7 +237,7 @@ a:hover {
 
 /* Sixth (last) button background */
 .flip-cards li:last-child > .button {
-  background-color: rgba(100, 66, 87, 0.8);
+  background: url("http://i.imgur.com/jNh93mw.png");
 }
 .flip-cards li:last-child > .panel {
   background-color: rgba(100, 66, 87, 1);
@@ -238,7 +247,7 @@ a:hover {
 .idcard {
   padding: 10px 20px;
   border-radius: 8px;
-  background-color: #026849;
+  background-color: black;
   font-size: 20px;
 }
 .philosopher {
@@ -246,15 +255,13 @@ a:hover {
   margin: auto;
   text-align: center;
 }
-footer {
-  position: absolute;
-  bottom: 0;
+.footer {
   width: 100%;
   height: 75px;
-  background-color: black;
-  color: white;
   padding-left: 25px;
   padding-top: 15px;
+  color: white;
+  background: black;
 }
 /* Resume Classes*/
 
@@ -431,6 +438,9 @@ footer {
 .news-image-gallery-container .read-more {
   color: #8a8a8a;
 }
+/*News Articles and Writing*/
+
+/*News articles end*/
 /*About Page Classes*/
 .aboutme {
   background: url('http://i.imgur.com/DUTsY5C.png');
@@ -451,7 +461,12 @@ footer {
 #about h4 {
   font-size: 30px;
 }
-
+.thumbs {
+  max-width: 200px;
+}
+.button {
+  background: #A76AA7;
+}
 /*Pic with Captions*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
 .snip1527 {
