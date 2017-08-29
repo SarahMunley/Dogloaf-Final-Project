@@ -48,6 +48,29 @@ p {
   font-size: 16px;
   font-weight: 400;
 }
+.contact {
+  width: 100%;
+  background-color: #C4EDE4;
+  text-align: center;
+  clear: both;
+  padding-top: 15px;
+}
+#contact-button {
+  color: white;
+  background-color: #450A42;
+  padding: 15px;
+  margin-bottom: 15px;
+
+}
+#contact-button a {
+  text-decoration: none;
+  color: white;
+  line-height: 1;
+}
+#contact-button a:hover {
+  text-decoration: none;
+  color: pink;
+}
 /*Flip Cards*/
 a:hover {
   text-decoration: underline;
@@ -262,6 +285,7 @@ a:hover {
   padding-top: 15px;
   color: white;
   background: black;
+  clear: both;
 }
 /* Resume Classes*/
 
@@ -658,8 +682,8 @@ a:hover {
 .aboutme {
   height: 250px;
 }
-#about p, h4{
-  width: 85%;
+#about p, h4 {
+  font-size: .8rem;
 
 }
 .about-50 {
